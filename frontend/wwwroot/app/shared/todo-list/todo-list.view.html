@@ -1,0 +1,17 @@
+<table class="table table-stripped">
+    <thead>
+        <tr>
+            <th class="text-center col-md-10">Tarefa</th>
+            <th class="text-center col-md-2">Status</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr ng-repeat="todo in vm.todos">
+            <td class="col-md-10">{{ todo.Text }}</td>
+            <td class="text-center col-md-2">
+                <span class="label label-success" ng-show="todo.Done">Concluído</span>
+                <span class="label label-danger" ng-hide="todo.Done">A fazer</span>
+            </td>
+        </tr>
+    </tbody>
+</table>

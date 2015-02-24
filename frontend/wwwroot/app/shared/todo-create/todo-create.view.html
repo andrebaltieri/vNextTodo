@@ -1,0 +1,14 @@
+<div class="panel panel-primary">
+    <div class="panel-heading">Adicionar Nova Tarefa</div>
+    <div class="panel-body">
+        <form ng-submit="vm.addTodo()">
+            <div class="input-group">
+                <input type="text" name="Text" id="Text" ng-model="vm.todoText" placeholder="Tarefa..."
+                       class="form-control"/>
+                <span class="input-group-btn">
+                    <input class="btn btn-default" type="submit" value="+"/>
+                </span>
+            </div>
+        </form>
+    </div>
+</div>

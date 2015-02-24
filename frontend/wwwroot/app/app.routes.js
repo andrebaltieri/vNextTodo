@@ -4,7 +4,7 @@
         $routeProvider
             .when('/', {
                 controller: 'TodoController',
-                controllerAs: 'todo',
+                controllerAs: 'vm',
                 templateUrl: 'app/modules/todo/todo.view.html'
             });
     });
